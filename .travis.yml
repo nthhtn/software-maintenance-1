@@ -1,9 +1,10 @@
 language: node_js
 node_js:
-	- "stable"
+	- "node"
 before_install:
 	- npm install -g mocha
 cache:
 	directories:
-		- "node_modules"
-script: mocha
+	  - "node_modules"
+script: npm test
+
