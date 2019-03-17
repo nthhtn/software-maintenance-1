@@ -6,7 +6,5 @@ install:
 	- yarn install
 	- npm install -g mocha
 cache:
-	- npm: true
-	- yarn: true
-script:
-	- npm test
+	directories:
+		- "node_modules"
